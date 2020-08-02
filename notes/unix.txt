@@ -57,27 +57,6 @@ ssh keypair
 			User username
 			HostName remote_host.com
 			Port 22
-rclone
-	fetch and unpack
-		curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
-		unzip rclone-current-linux-amd64.zip
-		cd rclone-*-linux-amd64
-	copy binary file
-		cp rclone /usr/bin/
-		chown root:root /usr/bin/rclone
-		chmod 755 /usr/bin/rclone
-	install manpage
-		mkdir -p /usr/local/share/man/man1
-		cp rclone.1 /usr/local/share/man/man1/
-		mandb
-	grub boot select time
-		sudo gedit /etc/default/grub
-		GRUB_HIDDEN_TIMEOUT=0
-		:wq
-		sudo update-grub
-	nautilus bookmarks
-		http://jamesmcminn.com/2012/12/removing-entries-from-nautilus-3-6-places/
-		https://askubuntu.com/questions/79150/how-to-remove-bookmarks-from-the-nautilus-sidebar/452322
 ufw # uncomlicated firewall
 	ufw default deny incoming
 	ufw default allow ssh
