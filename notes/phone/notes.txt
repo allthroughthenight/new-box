@@ -1,0 +1,37 @@
+google
+	authenticator
+	calculator
+	calendar
+	chrome
+	docs
+	drive
+	gmail
+	keep
+	live transcribe
+	maps
+	sheets
+	translate
+	voice
+personal
+	anki: sd card for storage
+		https://groups.google.com/forum/#!topic/anki-android/Eu7AXSQa6Es
+		---
+		1-close anki
+		2-mkdir /storage/extSdCard/Android/data/com.ichi2.anki
+		3-Anki > Settings > Advanced > Storage Location > (dir-from-step-2)
+	duolingo
+	firefox
+	lyft
+	muszio
+	podcast addict
+	pokemon go
+	snapchat
+	uber
+	myfitnesspal
+tools
+	call recorder
+	duo mobile
+	groupme
+	lastpass
+	rs file manager
+	steam

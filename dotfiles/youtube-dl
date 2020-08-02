@@ -1,0 +1,20 @@
+# only audio
+--extract-audio
+
+# file of what's been downloaded
+--download-archive aa-archive.txt
+
+# use file and skip what's been downloaded
+--youtube-skip-dash-manifest
+
+# audio format
+--audio-format mp3
+
+# ignore errors
+-i
+
+# output file names
+-o "%(title)s.%(ext)s"
+
+# ordered playlist
+# "%(playlist_index)s-%(title)s.%(ext)s"

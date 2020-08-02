@@ -1,0 +1,109 @@
+software
+	desktop-files (vbox)
+		compton # screen compositor to stop tearing
+		dunst # notification daemon
+		i3 # tiling window manager and associated packages
+		git # software version control system
+		libreoffice-pdfimport # edit pdf files with libreoffice
+		network-manager-gnome # gui network manager for i3status
+		terminator # terminal emulator
+		ufw # uncomplicated firewall
+		vim # text editor
+		vlc # multi-media player
+		x11-utils # shows X events for key bindings
+	x230 (laptop)
+		anki # spaced repettion learning application
+		chromium-browser # alternative web-browser
+		filezilla # gui ftp client
+		firefox # web-browser
+		rar # archive compressor
+		unrar # archive decompressor
+		unzip # archive decompressor
+		zip # archive compressor
+		vagrant # virtual box provisioner and headless hyper-visor
+		virtualbox # x86 machine virtualizer
+		virtualbox-ext-pack # supporting packages for virtualbox
+		xautolock # inactivity screen locker
+		xbacklight # screen brightness adjuster
+---
+guest add-ons
+	shard folder
+		https://virtualzero.net/blog/how-to-install-virtualbox-guest-additions-in-ubuntu-server-18.04-lts
+		---
+		<insert guest add-ons cd>
+		sudo mount /dev/cdrom /mnt
+		cd /mnt
+		sudo apt-get install -y dkms build-essential linux-headers-generic linux-headers-$(uname -r)
+		sudo su
+		./VboxLinuxAdditions.run
+		reboot
+	folder permissions
+		https://unix.stackexchange.com/questions/52667/file-permission-issues-with-shared-folders-under-virtual-box-ubuntu-guest-wind
+		---
+		usermod -aG vboxsf <user>
+ssh keypair
+	https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server#how-to-create-ssh-keys
+	---
+	1. make key pair
+		ssh-keygen
+	2a. copy to remote machine
+		ssh-copy-id username@remote_host
+	2b. without ssh-copy-id
+		$ cat ~/.ssh/<id_rsa>.pub | ssh username@remote_host "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+	3. adjust config
+		https://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/
+		---
+		Host short-name
+			User username
+			HostName remote_host.com
+			Port 22
+rclone
+	fetch and unpack
+		curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
+		unzip rclone-current-linux-amd64.zip
+		cd rclone-*-linux-amd64
+	copy binary file
+		cp rclone /usr/bin/
+		chown root:root /usr/bin/rclone
+		chmod 755 /usr/bin/rclone
+	install manpage
+		mkdir -p /usr/local/share/man/man1
+		cp rclone.1 /usr/local/share/man/man1/
+		mandb
+	grub boot select time
+		sudo gedit /etc/default/grub
+		GRUB_HIDDEN_TIMEOUT=0
+		:wq
+		sudo update-grub
+	nautilus bookmarks
+		http://jamesmcminn.com/2012/12/removing-entries-from-nautilus-3-6-places/
+		https://askubuntu.com/questions/79150/how-to-remove-bookmarks-from-the-nautilus-sidebar/452322
+ufw # uncomlicated firewall
+	ufw default deny incoming
+	ufw default allow ssh
+	ufw default allow 22
+	ufw default allow outgoing
+	ufw enable
+vundle
+	clone and install plug-ins
+		git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+		vim +PluginInstall +qall
+	powerline fonts: clone, install, and clean-up
+			git clone https://github.com/powerline/fonts.git ~/fonts
+			cd ~/fonts
+			./install.sh
+			cd ..
+			rm -rf fonts
+youtude-dl
+	set up
+		sudo apt install -y python3-pip
+		sudo pip3 install --upgrade youtube_dl mpv mplayer
+		sudo apt install -y ffmpeg
+		cp config ~/.config/youtube-dl/config
+	commands
+		test
+			youtube-dl https://www.youtube.com/watch?v=OHZALxhttAk
+		file
+			youtube-dl -a <file>
+		background
+			youtuve-dl -a <file> &> aa-output.txt

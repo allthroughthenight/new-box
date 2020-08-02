@@ -1,0 +1,15 @@
+/* 
+ * this file is to make sure programs with round corners user entire window space
+ * https://www.reddit.com/r/i3wm/comments/2qk7c3/with_i3_compton_and_gtk3_make_rounded_corners_on/
+ */
+
+.window-frame, .window-frame:backdrop {
+	box-shadow: 0 0 0 black;
+	border-style: none;
+	margin: 0;
+	border-radius: 0;
+}
+
+.titlebar {
+	border-radius: 0;
+}

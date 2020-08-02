@@ -1,0 +1,14 @@
+package,source,destination
+bash,bashrc,.bashrc
+bash-new,bashrc.new,.bashrc
+compton,compton,.compton.conf
+git,git-config,.gitconfig
+gtk,gtk,.config/gtk-3.0/gtk.css
+i3status,i3status,.config/i3status/config
+i3,i3,.i3/config
+rclone,,.rclone.conf
+terminator,terminator,.config/terminator/config
+vim,vimrc,.vimrc
+vim-vundle,vimrc.vundle,.vimrc
+zsh,zshrc,.zshrc
+zsh-omg,zshrc.ohmyzsh,.zshrc

@@ -1,0 +1,90 @@
+""""""""""""""""""""""
+" set up
+""""""""""""""""""""""
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 20
+
+" file explorer split
+" augroup ProjectDrawer
+"    autocmd!
+"    autocmd VimEnter * :Vexplore
+" augroup END
+
+" set relative number andline number
+set number
+set relativenumber
+
+" hightlight the character at collum 80
+match ErrorMsg /\%>79v.*\%<81v/
+
+" highlight characters past collum 80
+" match ErrorMsg '\%>80v.\+'
+
+" make collum 80 grey
+" highlight ColorColumn ctermbg=gray
+" set colorcolumn=80
+
+" make background transpa
+" hi Normal ctermbg=none
+" hi Normal guibg=NONE ctermbg=NONE
+
+" remove trailing white characer on save
+autocmd BufWritePre * %s/\s\+$//e
+
+" filetype detection for indents
+filetype plugin indent on
+
+" map space to :noh
+map <Space> :noh<cr>
+
+" auto reload file when it changes on disc
+set autoread
+
+" 'smart' backspace that moves through entire whitespaces
+set backspace=indent,eol,start
+
+" highligh during search
+set hlsearch
+
+" use case insensitive search, except when using capital letters
+set ignorecase
+set smartcase
+
+" highlight while typing search
+set incsearch
+
+" always show airline
+set laststatus=2
+
+" set linespace to zero for nicer presenation
+set linespace=0
+"
+" show white characters
+set list
+
+" set white characters to something worth while
+" set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set listchars=tab:>-,trail:~,extends:>,precedes:<
+
+" show line numbers
+set number
+
+" set pallet size for coloscheme
+set t_Co=256
+
+" diable line wrapping
+" remove '!' to enable
+set wrap!
+
+" enable syntax highlighting
+syntax on
+
+" have cursor in windows split
+autocmd VimEnter * wincmd w
+
+" disable visual bell
+set novisualbell

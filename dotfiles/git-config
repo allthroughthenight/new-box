@@ -1,0 +1,10 @@
+[core]
+	editor = vim
+[diff]
+	tool = vimdiff
+[push]
+	default = upstream
+[user]
+	name = <name>
+	email = <username@email.com>
+

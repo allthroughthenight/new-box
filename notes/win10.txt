@@ -1,0 +1,72 @@
+disable aero shake
+	https://techstuffer.com/disable-aero-shake-in-windows-10/
+	---
+	ctl + r
+	regedit
+	HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+	new DWORD Value named DisallowShakin
+	value 1
+control panel
+	color
+		dark theme
+		nightlight (5a - 5p)
+	power
+		never turn off monitor
+		never go to sleep
+		no screen saver
+		best performance
+	lock screen
+		fun facts
+		desktop as lock screen
+		apps that show on lock screen
+	quick access > options
+		show recently used files
+		show frequently used folders
+	start menu
+		diable bing searchs
+			https://www.howtogeek.com/224159/how-to-disable-bing-in-the-windows-10-start-menu/
+			https://www.ubergizmo.com/how-to/disable-bing-search-windows-10/
+		remove pinned apps
+		only 'show app' on
+		folders appear only 'settings'
+	task bar
+		search hidden
+		no toolbars
+		no 'show'
+		use small icons
+		system tray icons
+		combine when full
+		show on all displays
+software
+	ccleaner
+	git bash
+	oracle virtual box
+	vagrant
+	veracrypt
+	---
+	github
+		https://github.com/cerebrate/mousejiggler
+		https://github.com/pbatard/rufus
+	ninite
+		web browsers
+			chrome
+			firefox
+		messaging
+			discord
+		media
+			vlc
+		imaging
+			infranview
+		documents
+			foxit reader
+			libreoffice
+		security
+			essentials
+		file sharing
+			qbittorrent
+		other
+			steam
+		compression
+			7-zip
+		developer tools
+			filezilla

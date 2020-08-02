@@ -1,0 +1,27 @@
+# 'default' block for best hardware rendering
+backend = "glx";
+paint-on-overlay = true;
+glx-no-stencil = true;
+glx-no-rebind-pixmap = true;
+vsync = "opengl-swc"; 
+
+# disable shadows
+shadow = false;
+
+# enable fading
+fading = true; 
+
+# time for fading in ms
+fade-delta = 0.01; 
+
+# opacity change when fading in
+fade-in-step = 0.01;
+
+# opacity change when fading out
+fade-out-step = 0.01;
+
+# fade windows in/out when opening/closing
+no-fading-openclose = true;
+
+# for gtk+/gnome applications
+detect-rounded-corners = true;
