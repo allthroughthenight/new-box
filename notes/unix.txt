@@ -68,20 +68,19 @@ ssh keypair
 			Port 22
 ufw # uncomlicated firewall
 	ufw default deny incoming
-	ufw default allow ssh
-	ufw default allow 22
-	ufw default allow outgoing
+	ufw allow ssh
+	ufw allow outgoing
 	ufw enable
 vundle
 	clone and install plug-ins
 		git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 		vim +PluginInstall +qall
 	powerline fonts: clone, install, and clean-up
-			git clone https://github.com/powerline/fonts.git ~/fonts
-			cd ~/fonts
-			./install.sh
-			cd ..
-			rm -rf fonts
+		git clone https://github.com/powerline/fonts.git ~/fonts
+		cd ~/fonts
+		./install.sh
+		cd ..
+		rm -rf fonts
 youtude-dl
 	set up
 		sudo apt install -y python3-pip

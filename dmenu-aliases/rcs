@@ -1,2 +1,0 @@
-#!/bin/bash
-/usr/bin/rclone -P sync ~/files files:

@@ -1,0 +1,6 @@
+#!/bin/bash
+/usr/bin/rclone -P sync ~/files files:
+
+# tl;dr - 
+# chmod 777 <alias>
+# sudo cp <alias> /usr/bin/
