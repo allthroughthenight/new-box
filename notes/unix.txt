@@ -41,6 +41,15 @@ guest add-ons
 		https://unix.stackexchange.com/questions/52667/file-permission-issues-with-shared-folders-under-virtual-box-ubuntu-guest-wind
 		---
 		usermod -aG vboxsf <user>
+firefox about:config
+	browser.search.suggest.enabled;false
+	browser.urlbar.suggest.bookmark;false
+	browser.urlbar.suggest.history;false
+	about:preferences#privacy
+		location,block new request
+		camera,block new request
+		microphone,block new request
+		notificaions,block new request
 ssh keypair
 	https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server#how-to-create-ssh-keys
 	---
