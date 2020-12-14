@@ -130,6 +130,9 @@ Plugin 'vim-syntastic/syntastic'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" set leader key for easy-motion
+let g:EasyMotion_leader_key = '/'
+
 " Brief help
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
