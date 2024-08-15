@@ -44,6 +44,8 @@ software
 	vagrant
 	veracrypt
 	---
+	tbd
+	microsoft powertoys
 	github
 		https://github.com/cerebrate/mousejiggler
 		https://github.com/pbatard/rufus
