@@ -19,6 +19,10 @@ control panel
 		fun facts
 		desktop as lock screen
 		apps that show on lock screen
+	adjust the appearance and performance of windows
+		adjust for best performance
+		show thumbnails instead of icons		
+		smooth edges of screen fonts
 	quick access > options
 		show recently used files
 		show frequently used folders
@@ -38,37 +42,27 @@ control panel
 		combine when full
 		show on all displays
 software
-	ccleaner
-	git bash
-	oracle virtual box
-	vagrant
-	veracrypt
-	---
-	tbd
-	microsoft powertoys
-	github
-		https://github.com/cerebrate/mousejiggler
-		https://github.com/pbatard/rufus
 	ninite
 		web browsers
 			chrome
 			firefox
 		messaging
 			discord
+			zoom
+		storage
+			google drive
+		compression
+			7-zip		
 		media
 			vlc
+			spotify
+		developer tools
+			vscode
 		imaging
 			infranview
 		documents
 			foxit reader
-			libreoffice
-		security
-			essentials
 		file sharing
 			qbittorrent
 		other
 			steam
-		compression
-			7-zip
-		developer tools
-			filezilla
