@@ -41,6 +41,13 @@ control panel
 		system tray icons
 		combine when full
 		show on all displays
+Lets Add Your Microsoft Account
+	windows install
+	cmd: shift + f10
+	ncpa.cpl
+	disable network adapter
+	oobe\bypassnro
+	continue with limited set-up (without internet)
 software
 	ninite
 		web browsers
