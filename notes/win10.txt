@@ -48,6 +48,34 @@ Lets Add Your Microsoft Account
 	disable network adapter
 	oobe\bypassnro
 	continue with limited set-up (without internet)
+lock screen status
+	none
+	show the lock screen background picture on the sign in screen
+remove programs (how does a base install have bloatware tf?)
+	copilot
+	family
+	feedback hub
+	media player
+	m365
+	bing search
+	clipchamp
+	m news
+	m onedrive
+	m teams
+	m todo
+	outlook
+	quick assist
+	remote desktop connection
+	solitaire
+	sticky notes
+	weather
+transparency effects: off
+start up apps: none
+taskbar
+	task view
+	widgets
+	other tray icons
+	taskbar behavior: show my taskbar on all displays
 software
 	ninite
 		web browsers
